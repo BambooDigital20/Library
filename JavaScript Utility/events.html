@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Events</title>
+
+    <script type="text/javascript">
+
+        //mouse events
+
+            //onclick
+        function msgBoasVindas(){
+            alert('Seja bem vindo!');
+        }
+            //ondblclick
+        function msgdblClick(){
+            alert('Opa Dois clicks!');
+        }
+            //onmousedown
+            function msgmousedown(){
+            alert('No press Motherfucker!');
+        }
+          //onmouseover
+          function msgmouseover(){
+            alert('kkk you pass the mouse on me kkk!');
+        }
+          //onmouseout
+          function msgmouseout(){
+            alert('kkk you pass the mouse out of me kkk!');
+        }
+
+        //Keyboard events
+
+            //onkeydown
+        function onkeyd(){
+            alert('You press ANY key!')
+        }
+            //onkeypress
+        function onkep(){
+            alert('You press a letter and number key!')
+        }
+
+
+        //Windows Events
+
+                //onload
+            function onld(){
+                alert('The page is reload')
+            }
+                //onresize
+            function onr(){
+                alert('The page is resized')
+            }
+        //Forms
+            //onfocus
+            function onf(){
+                alert ('This Field is on focus!')
+            }
+            //onblur
+            function onb(){
+                alert ("This Field lose it's focus!")
+            }
+            //onchange
+            function onc(){
+                alert ('The field was changed')
+            }
+    </script>
+
+</head>
+<!-- Windows events -->
+<body onload="onld()" onresize="onr()">
+
+<!-- Forms events -->
+
+<input type="text" placeholder="On Focus" onfocus="onf()"/>
+<select onchange="onc()">
+    <option value="First">First</option>
+    <option value="Second">Second</option>
+</select>
+<input type="text" placeholder="On Blur" onblur="onb()"/>
+    <!--Keyboard Events-->
+<input type="text" placeholder="Any Key" onkeydown="onkeyd()"/>
+<input type="text" placeholder="Numbers, Symbols and Letters" onkeypress="onkep()" /> 
+
+    <!-- mouse events -->
+<div onclick="msgBoasVindas()" style="background: #000; color:white; height:150px; width:150px;"> 1 click</div>
+<div ondblclick="msgdblClick()" style="background: #456; height:150px; width:150px;"> double click</div>
+<div onmousedown="msgmousedown()" style="background: #555; height:150px; width:150px;"> Mouse Down</div>
+<div onmouseover="msgmouseover()" style="background: red; height:150px; width:150px;"> Mouse Over</div>
+<div onmouseout="msgmouseout()" style="background: yellow; height:150px; width:150px;"> Mouse Out</div>
+
+
+
+</body>
+
+</html>
