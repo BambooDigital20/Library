@@ -1,5 +1,7 @@
 <?php
 
+
+//require the funciton that validate the login in the data base
 require_once ("function_validate_login.php");
 
 

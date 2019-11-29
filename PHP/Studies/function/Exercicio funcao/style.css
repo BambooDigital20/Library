@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+   
+}
+.container2{
+    width: 500px;
+}
+.table{
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #CCC;
+    border-radius: 20px;
+    width: 500px;
+    float: left;
+}
+
+table{
+
+    padding: 10px;
+    width: 500px;
+}
+table td{
+    padding: 10px;
+    width: 50;
+}
